@@ -8,7 +8,7 @@
 }
 .nav-bar{
     background-color: brown;
-    width: 100%;
+    width: 93vw;
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -48,13 +48,19 @@
     border-radius: 100%;
     box-shadow: 0px 0px 7px white;
 }
+.mobile-menu-icon{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10rem;
-    height: 250vh;
-    width: 100%;
+    gap: 2rem;
+    min-height: 100vh;
+    width: 93vw;
     background-color: rgba(0, 0, 0, 0.904);
 }
 #title{
@@ -63,10 +69,10 @@ section{
     align-items: center;
     background: #4a4a4af7;
     background-size: cover;
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-radius: 0.4rem;
     width: 98%;
-    height: 13rem;
+    height: 12rem;
 }
 #title h1{
     font-size: 5rem;
@@ -91,18 +97,12 @@ section{
     color: red;
     text-shadow: 2px 2px 2px #ffffff7e;
 }
-#body{
-    width: 98%;
-    background: #4a4a4af7;
-    border-radius: 0.4rem;
-    display: flex;
-}
-#content{
-    width: 50%;
-}
+
 #slider{
-    width: 50%;
+    background: #4a4a4af7;
+    width: 93vw;
     height: 45rem;
+    border-radius: 0.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,17 +111,17 @@ section{
     text-shadow: 2px 2px 2px #7f7f7f7e;
 }
 #slider h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 .container-slider{
-    width: 30%;
+    width: 60%;
     height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #next-bt img, #prev-bt img{
-    width: 50px;
+    width: 50px;;
 }
 #next-bt, #prev-bt{
     border: none;
@@ -129,8 +129,8 @@ section{
     cursor: pointer;
 }
 .container-images img{
-    width: 50rem;
-    height: 32rem;
+    width: 45vw;
+    height: 28vh;
     border-radius: .3rem;
 }
 .container-images {
@@ -159,7 +159,7 @@ section{
     padding: 12px;
     background-color: rgba(0, 0, 0, 0.679);
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     height: 7vh;
 }
 small{
@@ -173,11 +173,13 @@ small{
     font-size: 1.2rem;
 }
 #history{
-    background: #fffffff7;
-    width: 98%;
-    height: 85vh;
-    padding: 5rem 20rem;
+    background: #4a4a4af7;
+    width: 93vw;
+    padding: 5vh 26vw;
     border-radius: 0.4rem;
+    color: rgba(255, 255, 255, 0.859);
+    margin-bottom: 2rem;
+    text-align: justify;
 }
 #history h1{
     font-size: 2.6rem;
@@ -189,10 +191,64 @@ small{
     margin-bottom: 1rem;
 }
 footer{
-    box-shadow: 0px 0px 9px 3px rgb(0, 119, 255);
+    box-shadow: 0px 0px 9px 3px #7b7b7bf7;
     bottom: 0;
     height: 2rem;
     text-align: center;
     padding-top: 8px;
     font-weight: bold;
+    width: 93vw;
+}
+@media screen and (max-width: 730px) {
+    .nav-item{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+    }
+    .mobile-menu-icon i{
+        font-size: 6vw;
+    }
+    .logo{
+        display: none;
+    }
+    .menu-mobile ul{
+        display: flex;
+        align-items: center;
+        padding-bottom: 1rem;
+        justify-content: space-evenly;
+        width: 95vw;
+    }
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .nav-link{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .open{
+        display: block;
+    }
+    #title h1{
+        font-size: 8vw;
+        padding-left: 4vw;
+    }
+    #title h2{
+        font-size: 3vw;
+        width: 40vw;
+    }
+    #title{
+        height: 18vw;
+    }
+    .container-images img{
+        width: 30rem;
+        height: 20rem;
+    }
+
 }

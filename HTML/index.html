@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/main.css">
     <title>EnBloglish</title>
 </head>
@@ -15,14 +16,25 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-list"><a href="verbs.html" class="nav-link">Verbs</a></li>
-                    <li class="nav-list"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
-                    <li class="nav-list"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="verbs.html" class="nav-link">Verbs</a></li>
+                    <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                    <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
                 </ul>
             </div>
             <div class="logo">
                 <img src="../Img/uk.png" alt="Bandeira UK" title="Bandeira UK">
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars" class="icon"></i></button>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="verbs.html" class="nav-link">Verbs</a></li>
+                    <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                    <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -32,48 +44,44 @@
                 <h1><span id="span1">E</span>n<span id="span2">B</span>loglish</h1>
                 <h2>Seu blog favorito sobre a lingua inglêsa</h2>
             </article>
-            <article id="body">
-                <div id="content">
-                    blablablabla
-                </div>
-                <div id="slider">
-                    <h1>Navegue pelo nosso site</h1>
-                    <div class="container-slider">
-                        <button id="prev-bt"><img src="../img/left.png" alt="prev-button" title="Anterior"></button>
-                        <div class="container-images">
-                            <div class="slider on">
-                                <a href="#nav">
-                                <img src="../Img/Phrasal.jpg" alt="Phrasal Verbs">
-                                <div class="describe">
-                                    <h2>Phrasal Verbs</h2>
-                                    <p>blablablabla</p>
-                                    <small>Foto de Karolina Grabowska em pexels.com</small>
-                                </a>
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <a href="#nav">
-                                <img src="../img/verbs.jpg" alt="Verbos">
-                                <div class="describe">
-                                    <h2>Verbos</h2>
-                                    <p>blablablabla</p>
-                                    <small>Foto de Brett Jordan em pexels.com</small>
-                                </a>
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <a href="#nav">
-                                <img src="../img/note.jpg" alt="Regras gramaticais">
-                                <div class="describe">
-                                    <h2>Regras Gramaticais</h2>
-                                    <p>blablablabla</p>
-                                    <small>Foto de Tirachard Kumtanom em pexels.com</small>
-                                </a>
-                                </div>
+
+            <article id="slider">
+                <h1>Aprenda sobre</h1>
+                <div class="container-slider">
+                    <button id="prev-bt"><img src="../img/left.png" alt="prev-button" title="Anterior"></button>
+                    <div class="container-images">
+                        <div class="slider on">
+                            <a href="#nav">
+                            <img src="../Img/Phrasal.jpg" alt="Phrasal Verbs">
+                            <div class="describe">
+                                <h2>Phrasal Verbs</h2>
+                                <p>blablablabla</p>
+                                <small>Foto de Karolina Grabowska em pexels.com</small>
+                            </a>
                             </div>
                         </div>
-                        <button id="next-bt"><img src="../img/right.png" alt="next-button" title="Proximo"></button>
+                        <div class="slider">
+                            <a href="#nav">
+                            <img src="../img/verbs.jpg" alt="Verbos">
+                            <div class="describe">
+                                <h2>Verbos</h2>
+                                <p>blablablabla</p>
+                                <small>Foto de Brett Jordan em pexels.com</small>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <a href="#nav">
+                            <img src="../img/note.jpg" alt="Regras gramaticais">
+                            <div class="describe">
+                                <h2>Regras Gramaticais</h2>
+                                <p>blablablabla</p>
+                                <small>Foto de Tirachard Kumtanom em pexels.com</small>
+                            </a>
+                            </div>
+                        </div>
                     </div>
+                    <button id="next-bt"><img src="../img/right.png" alt="next-button" title="Proximo"></button>
                 </div>
             </article>
             <article id="history">
