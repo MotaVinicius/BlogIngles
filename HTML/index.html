@@ -11,6 +11,7 @@
     <title>EnBloglish</title>
 </head>
 <body>
+    <!--menu-->
     <header>
         <div id="nav"></div>
         <nav class="nav-bar">
@@ -20,9 +21,9 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="verbs.html" class="nav-link">Verbs</a></li>
                     <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
                     <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -34,19 +35,21 @@
             <div class="menu-mobile">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="verbs.html" class="nav-link">Verbs</a></li>
                     <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
                     <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+        <!--Titulo-->
         <section>
             <article id="title">
                 <h1><span id="span1">E</span>n<span id="span2">B</span>loglish</h1>
                 <h2>Seu blog favorito sobre a lingua inglêsa</h2>
             </article>
+            <!--Carrossel-->
             <article>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
@@ -90,6 +93,7 @@
                     </button>
                   </div>
             </article>
+            <!--Newsletter-->
             <div id="newsletter">
                 <div id="box-newsletter">
                     <div id="content">
@@ -99,6 +103,7 @@
                             <input type="email" id="email" placeholder="Insira seu e-mail aqui">
                             <button onclick="enviar()">Inscrever-se</button>
                         </div>
+                        <span id="span">Digite seu email corretamente</span>
                     </div>
                     <div id="imagem">
                         <div id="fundo">
@@ -107,17 +112,51 @@
                     </div>
                 </div>
             </div>
-            <article id="history">
-                <h1>História da lingua inglêsa</h1>
-                <p>A história da língua inglesa começa com o inglês antigo, que era falado pelos povos germânicos que habitavam a Inglaterra entre os séculos V e XI. Essa forma primitiva de inglês apresentava uma estrutura gramatical e vocabulário distintos. Embora muitas palavras do inglês antigo sejam reconhecíveis hoje, a pronúncia e a ortografia eram bastante diferentes.</p>
-                <p>Durante a Idade Média, o inglês médio emergiu como resultado da influência do francês normando após a conquista normanda em 1066. Palavras de origem francesa e latina foram incorporadas ao inglês, especialmente nas áreas de governo, justiça, religião e artes. O inglês médio viu um desenvolvimento significativo da língua escrita, graças à difusão da imprensa por Johannes Gutenberg no século XV. Isso levou a uma maior padronização da ortografia e permitiu uma disseminação mais ampla da língua escrita.</p>
-                <p>Com o início da era moderna, o inglês passou por transformações adicionais. Durante os séculos XVII e XVIII, a Revolução Industrial e os avanços científicos trouxeram um vocabulário expandido para o inglês, com termos relacionados à ciência, tecnologia e indústria. O inglês também foi influenciado pelas explorações marítimas e colonização britânica, expandindo sua influência global.</p>
-                <p>O inglês moderno, como o conhecemos hoje, é a forma predominante da língua inglesa. O período moderno testemunhou um aumento sem precedentes na disseminação e influência do inglês. O Império Britânico desempenhou um papel importante na expansão da língua para várias partes do mundo. Além disso, o crescimento dos Estados Unidos como potência global trouxe ainda mais alcance para o inglês.</p>
-                <p>Ao longo do tempo, o inglês absorveu palavras de muitos outros idiomas, tornando-se uma língua rica e diversificada. Hoje, o inglês é uma língua franca global, amplamente utilizada em diversas áreas, como literatura, ciência, tecnologia, negócios e entretenimento.</p>
-                <p>Em suma, a história da língua inglesa é uma jornada fascinante de mudanças, influências e expansão global. Através dos séculos, essa língua versátil evoluiu e se tornou uma das línguas mais proeminentes do mundo, conectando pessoas de diferentes culturas e proporcionando um meio de comunicação globalmente compreendido.</p>
-            </article>
+            <!--pop-up-->
+            <div class="pop-up">
+                <div class="pop-up-window">
+                    <div class="close-pop-up">
+                        <i class="fa-solid fa-xmark" title="Fechar"></i>
+                    </div>
+                    <div class="content-pop-up">
+                        <h3>Você acaba de se inscrever na nossa Newsletter!</h3>
+                        <p>a partir de agora você recebera nossas dicas semanais para evoluir seu aprendizado direto no seu e-mail</p>
+                        <i class="fa-solid fa-check" title="Ok"></i>
+                    </div>
+                </div>
+            </div>
+            <!--História-->
+            <div id="bottom">
+                <article id="history">
+                    <h1>História da lingua inglêsa</h1>
+                    <p>A história da língua inglesa começa com o inglês antigo, que era falado pelos povos germânicos que habitavam a Inglaterra entre os séculos V e XI. Essa forma primitiva de inglês apresentava uma estrutura gramatical e vocabulário distintos. Embora muitas palavras do inglês antigo sejam reconhecíveis hoje, a pronúncia e a ortografia eram bastante diferentes.</p>
+                    <p>Durante a Idade Média, o inglês médio emergiu como resultado da influência do francês normando após a conquista normanda em 1066. Palavras de origem francesa e latina foram incorporadas ao inglês, especialmente nas áreas de governo, justiça, religião e artes. O inglês médio viu um desenvolvimento significativo da língua escrita, graças à difusão da imprensa por Johannes Gutenberg no século XV. Isso levou a uma maior padronização da ortografia e permitiu uma disseminação mais ampla da língua escrita.</p>
+                    <p>Com o início da era moderna, o inglês passou por transformações adicionais. Durante os séculos XVII e XVIII, a Revolução Industrial e os avanços científicos trouxeram um vocabulário expandido para o inglês, com termos relacionados à ciência, tecnologia e indústria. O inglês também foi influenciado pelas explorações marítimas e colonização britânica, expandindo sua influência global.</p>
+                    <p>O inglês moderno, como o conhecemos hoje, é a forma predominante da língua inglesa. O período moderno testemunhou um aumento sem precedentes na disseminação e influência do inglês. O Império Britânico desempenhou um papel importante na expansão da língua para várias partes do mundo. Além disso, o crescimento dos Estados Unidos como potência global trouxe ainda mais alcance para o inglês.</p>
+                    <p>Ao longo do tempo, o inglês absorveu palavras de muitos outros idiomas, tornando-se uma língua rica e diversificada. Hoje, o inglês é uma língua franca global, amplamente utilizada em diversas áreas, como literatura, ciência, tecnologia, negócios e entretenimento.</p>
+                    <p>Em suma, a história da língua inglesa é uma jornada fascinante de mudanças, influências e expansão global. Através dos séculos, essa língua versátil evoluiu e se tornou uma das línguas mais proeminentes do mundo, conectando pessoas de diferentes culturas e proporcionando um meio de comunicação globalmente compreendido.</p>
+                </article>
+                <aside>
+                    <div id="socialMidias">
+                        <h2>Nossas redes sociais</h2>
+                        <ul>
+                            <li><a href=""><img src="../Img/whatsapp.png" alt="WhatsApp">Whatsapp</li></a>
+                            <li><a href=""><img src="../Img/facebook.png" alt="Facebook">Facebook</li></a>
+                            <li><a href=""><img src="../Img/instagram.png" alt="Instagram">Instagram</li></a>
+                            <li><a href=""><img src="../Img/twitter.png" alt="Twitter">Twitter</li></a>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
         </section>
     </main>
+    <!--Topo-->
+    <a href="#nav" title="Retornar ao topo">
+        <div id="topo">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+    <!--Footer-->
     <footer>
             &copy; Projeto pessoal
     </footer>

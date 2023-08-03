@@ -63,6 +63,36 @@ aside li{
 #topicos{
     padding: 0 4vw;
 }
+/*topo*/
+#topo{
+    position: fixed;
+    bottom: .5vh;
+    right: 1vw;
+    width: 3vw;
+    height: 6vh;
+    background-color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    animation: float 1.5s infinite ease-in-out;
+}
+@keyframes float{
+    0%{
+        bottom: .5vh;
+    }
+    50%{
+        bottom: 1.5vh;
+    }
+    100%{
+        bottom: .5vh;
+    }
+}
+#topo i{
+    color: rgb(165, 42, 42);
+    font-size: 1.8vw;
+}
+/*footer*/
 footer{
     display: flex;
     justify-content: space-evenly;
