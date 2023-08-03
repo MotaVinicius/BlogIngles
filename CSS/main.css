@@ -212,6 +212,7 @@ input::placeholder{
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
+/*footer*/
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -224,6 +225,9 @@ footer{
     padding-top: 3vh;
     font-weight: bold;
     width: 99.2vw;
+}
+footer p{
+    color: #d0d0d0e1;
 }
 @media screen and (max-width: 730px) {
     .nav-item{
