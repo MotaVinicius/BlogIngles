@@ -49,34 +49,38 @@
             <div id="container-form">
                 <form id="contato">
                     <h4>Entre em contato conosco preenchendo o formulário abaixo</h4>
+                    <small>*Todos os campos são obrigatórios</small>
                 <!-- campo nome -->
                 <div class="input-box">
                     <label for="nome">Nome</label>
-                    <div class="field">
+                    <div class="field one">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" autocomplete="none" id="nome" placeholder="Nome completo" required>
+                        <input type="text" autocomplete="none" id="nome" placeholder="Nome completo" >
                     </div>
+                    <span class="spanNome">Digite seu nome completo</span>
                 </div>
         <!-- campo email -->
                 <div class="input-box">
                     <label for="email">E-mail</label>
-                    <div class="field">
+                    <div class="field two">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" id="email" placeholder="xxxxxxxx@xxxxx.com" autocomplete="off" required>
-                    </div>    
+                        <input type="email" id="email" placeholder="xxxxxxxx@xxxxx.com" autocomplete="off" >
+                    </div>  
+                    <span class="spanEmail">Digite seu Email corretamente</span>  
                 </div>
         <!-- campo telefone -->
                 <div class="input-box">
                     <label for="telefone">Telefone</label>
-                    <div class="field">
+                    <div class="field three">
                         <i class="fa-solid fa-phone"></i>
                         <input type="text" autocomplete="none" id="telefone" placeholder="(00)0000-0000">
                     </div>
+                    <span class="spanTelefone">Digite seu numero completo</span>
                 </div>
         <!-- campo motivo -->
                 <div class="form-row">
                     <label for="motivo">Qual o motivo do contato?</label>
-                    <select id="motivo" required>
+                    <select id="motivo">
                         <option value="">Selecione</option>
                         <option value="sugestão">Sugestão</option>
                         <option value="duvida">Duvida</option>
@@ -87,11 +91,12 @@
                 <div class="form-row">
                     <label for="mensagem">Mensagem:</label>
                     <br><br>
-                    <textarea id="mensagem" rows="9" cols="90" placeholder="Digite sua mensagem aqui." required></textarea>
+                    <textarea id="mensagem" rows="9" cols="90" placeholder="Digite sua mensagem aqui (minimo de 40 caracteres)."></textarea>
+                    <span class="spanMensagem">Corpo da mensagem deve conter no minimo 40 caracteres</span>
                 </div>
         <!-- botão -->
                 <div class="botao">
-                    <button type="submit" id="btn-form">Enviar</button>
+                    <button id="btn-form" onclick="enviar()" onmouseover="desabilitado()">Enviar</button>
                 </div>
                 </form>
             </div>
@@ -107,10 +112,18 @@
                 </div>
             </aside>
         </section>
+        <div id="popUpWindow">
+            <h2>Formulário enviado com sucesso!</h2>
+            <p>Retornaremos o contato via Email o mais breve possivel.</p>
+            <button onclick="fechar()">Fechar</button>
+        </div>
     </main>
     <!--Footer-->
     <footer>
         &copy; Projeto pessoal
     </footer>
 </body>
+    <script src="../JS/jquery-3.7.0.min.js"></script>
+    <script src="../JS/jquery.mask.min.js"></script>
+    <script src="../JS/contato.js"></script>
 </html>
