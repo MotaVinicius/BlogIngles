@@ -94,7 +94,7 @@ section{
     border-bottom: 1px solid white;
     margin-bottom: 1.5vh;
 }
-#input input{
+.input input{
     width: 16vw;
     background-color: transparent;
     border: none;
@@ -102,13 +102,16 @@ section{
     color: white;
     padding: 0 1vw;
 }
+.wrong{
+    border-bottom: 2px solid red;
+}
 input:focus{
     outline: none;
 }
 input::placeholder{
     text-align: center;
 }
-#input button{
+.input button{
     margin-left: .25vw;
     background-color: white;
     border-radius: .2vw;
@@ -116,7 +119,7 @@ input::placeholder{
     padding: .4vh .4vw;
     font-weight: 600;
 }
-#input button:hover{
+.input button:hover{
     background-color: brown;
     color: white;
     cursor: pointer;

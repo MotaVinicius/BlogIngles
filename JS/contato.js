@@ -55,7 +55,7 @@ telefone.addEventListener('blur', () => {
     }
 })
 mensagem.addEventListener('blur', () => {
-    if(mensagem.value.length > 50 || mensagem.value.length == 0){
+    if(mensagem.value.length > 40 || mensagem.value.length == 0){
         spanMensagem.style.display = 'none'
         mensagem.style.border = 'none'
     } else {
@@ -74,6 +74,7 @@ function desabilitado() {
 
 function enviar() {
     let popUp = document.querySelector('#popUpWindow')
+    let popUp2 = document.querySelector('#popUpMessage')
     if(nome.value.length >= 8 && email.value.length >= 8 && email.value.includes('@') && email.value.includes('.com') && telefone.value.length >= 13 && mensagem.value.length >= 40) {
         popUp.style.display = 'flex';
         mensagem.value = '';
@@ -81,7 +82,7 @@ function enviar() {
         email.value = '';
         nome.value = '';
     } else {
-        popUp.style.display = 'none';
+        alert('Preencha todos os campos corretamente!')
     }
 }
  function fechar() {
