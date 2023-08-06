@@ -6,7 +6,7 @@ section{
     align-items: center;
     gap: 8vh;
     min-height: 100vh;
-    width: 99.2vw;
+
     background-color: rgba(0, 0, 0, 0.904);
 }
 #title{
@@ -218,7 +218,7 @@ input::placeholder{
     margin-bottom: 20vh;
     text-align: justify;
 }
-#history h1{
+#history h2{
     font-size: 2.6rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -294,10 +294,10 @@ footer{
     color: #e8e8e8f4;
     text-align: center;
     font-weight: bold;
-    width: 99.2vw;
     padding: 1vh 0;
 }
-@media screen and (max-width: 730px) {
+
+@media screen and (max-width: 768px) {
     .nav-item{
         display: none;
     }
@@ -312,26 +312,15 @@ footer{
     .mobile-menu-icon i{
         font-size: 6vw;
     }
-    .logo{
-        display: none;
-    }
     .menu-mobile ul{
         display: flex;
         align-items: center;
         padding-bottom: 1rem;
         justify-content: space-evenly;
-        width: 95vw;
     }
     .menu-mobile .nav-item {
         display: block;
         padding-top: 1.2rem;
-    }
-    .nav-link{
-        font-size: 4vw;
-        font-weight: 600;
-    }
-    .open{
-        display: block;
     }
     #title h1{
         font-size: 8vw;
@@ -348,5 +337,127 @@ footer{
         width: 30rem;
         height: 20rem;
     }
-
+    .carousel{
+        width: 75%;
+    }
+    #box-newsletter{
+        width: 75vw;
+        height: 25vh;
+    }
+    #content h3{
+        font-size: 3vw;
+    }
+    #content{
+        align-items: start;
+        padding-left: 2vw;
+    }
+    .input input{
+        width: 32vw;
+    }
+    .input input:focus{
+        text-align: center;
+    }
+    #fundo img{
+        width: 5.5vw;
+    }
+    #imagem{
+        margin-left: 0;
+    }
+    .input button{
+        font-size: 1.9vw;
+    }
+    aside{
+        display: none;
+    }
+    #history{
+        width: 100%;
+        border: none;
+    }
+    #topo{
+        width: 7.5vw;
+        height: 6.5vh;
+    }
+    #topo i{
+        font-size: 4vw;
+    }
+    #history h2{
+        font-size: 2.3rem;
+    }
+    #history p{
+        font-size: 1.2rem;
+    }
+    #span{
+        margin: 0;
+        font-size: 1.6vw;
+    }.pop-up-window{
+        width: 60vw;
+        height: 35vh;
+    }
+    .close-pop-up i{
+        font-size: 3.8vw;
+        padding: 1vw;
+    }
+    .close-pop-up{
+        width: 58vw;
+    }
+    .content-pop-up{
+        width: 60vw;
+        align-items: normal;
+        height: 35vh;
+    }
+    .fa-check{
+        font-size: 3.5vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .carousel{
+        width: 94%;
+    }
+    #box-newsletter{
+        width: 94vw;
+        height: 22vh;
+        border-radius: 1vw;
+    }
+    #content h3{
+        font-size: 4.2vw;
+    }
+    #fundo img{
+        width: 8vw;
+    }
+    #imagem{
+        width: 20vw;
+        height: 10vh;
+        margin-right: -2vw;
+    }
+    .input input{
+        width: 45vw;
+    }
+    .input button{
+        font-size: 2.8vw;
+    }
+    #history h2{
+        font-size: 2.2rem;
+    }
+    #history p{
+        font-size: 1.1rem;
+    }
+    #title h2{
+        margin-left: 1rem;
+        font-size: 3.5vw;
+    }
+    #title h1{
+        padding-right: 20px;
+        font-size: 9.5vw;
+    }
+    #topo{
+        width: 10.5vw;
+        height: 6vh;
+    }
+    #topo i{
+        font-size: 5.5vw;
+    }
+    footer{
+        font-size: 3vw;
+        height: 4vh;
+    }
 }

@@ -6,7 +6,6 @@
 /*menu*/
 .nav-bar{
     background-color: brown;
-    width: 99.2vw;
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -57,13 +56,13 @@
 }
 .menu-mobile{
     height: 95vh;
-    width: 100%;
     display: none;
     justify-content: center;
     align-items: center;
     background-color: #323232f7;
 }
 .menu-mobile ul{
+    margin-left: -6vw;
     height: 95vh;
     list-style-type: none;
     display: flex;
@@ -74,6 +73,7 @@
 .menu-mobile a{
     font-size: 4vw;
 }
+
 @media screen and (max-width: 768px){
     .mobile-menu-icon{
         display: block;
@@ -86,5 +86,22 @@
     }
     .open{
         display: flex;
+    }
+}
+@media screen and (max-width: 600px){
+    .mobile-menu-icon i{
+        font-size: 8vw;
+    }
+    .menu-mobile a{
+        font-size: 5vw;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 7px white;
+    }
+    .nav-bar{
+        height: 4rem;
     }
 }
