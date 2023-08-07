@@ -69,7 +69,7 @@ aside li{
     justify-content: center;
     flex-direction: column;
     padding-bottom: 15vh;
-    min-width: 99.2vw;
+    min-width: 99vw;
 }
 #header-table h1{
     color: white;
@@ -153,7 +153,7 @@ footer{
     color: #e8e8e8f4;
     text-align: center;
     font-weight: bold;
-    min-width: 99.2vw;
+    min-width: 99.1vw;
     padding: 1vh 0;
 }
 @media screen and (max-width:768px){
@@ -239,5 +239,8 @@ footer{
     footer{
         font-size: 3vw;
         height: 4vh;
+    }
+    .table{
+        margin-left: 1.5vw;
     }
 }
