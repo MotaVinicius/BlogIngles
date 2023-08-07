@@ -64,7 +64,7 @@ section{
   }
   /*Newsletter*/
 #newsletter{
-    margin: 10vh 0;
+    margin: 6vh;
     width: 99.2vw;
     display: flex;
     align-items: center;
@@ -419,7 +419,11 @@ footer{
         border-radius: 1vw;
     }
     #content h3{
-        font-size: 4.2vw;
+        font-size: 5vw;
+    }
+    #content{
+        width: 86vw;
+        align-items: center;
     }
     #fundo img{
         width: 8vw;
@@ -428,12 +432,15 @@ footer{
         width: 20vw;
         height: 10vh;
         margin-right: -2vw;
+        display: none;
     }
     .input input{
-        width: 45vw;
+        width: 60vw;
     }
     .input button{
-        font-size: 2.8vw;
+        font-size: 3.5vw;
+        padding: 1.1vw;
+        border-radius: 1.2vw;
     }
     #history h2{
         font-size: 2.2rem;
@@ -449,15 +456,41 @@ footer{
         padding-right: 20px;
         font-size: 9.5vw;
     }
+    .pop-up-window{
+        width: 80vw;
+        height: 35vh;
+    }
+    .close-pop-up i{
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    .close-pop-up{
+        width: 76vw;
+    }
+    .content-pop-up{
+        width: 65vw;
+        align-items: normal;
+        height: 35vh;
+    }
+    .fa-check{
+        font-size: 6vw;
+    }
     #topo{
         width: 10.5vw;
-        height: 6vh;
+        height: 5.2vh;
+        right: 1.5vw;
     }
     #topo i{
-        font-size: 5.5vw;
+        font-size: 6.5vw;
     }
     footer{
         font-size: 3vw;
         height: 4vh;
+    }
+    section{
+        gap: 5vh;
+    }
+    #title{
+        margin-bottom: 5vh;
     }
 }
