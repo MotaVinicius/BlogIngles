@@ -65,7 +65,7 @@ section{
   /*Newsletter*/
 #newsletter{
     margin: 6vh;
-    width: 99.2vw;
+    min-width: 98vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,21 +78,21 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
+    gap: 0;
     border-radius: .3vw;
 }
 #content{
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    margin-left: -3vw;
+    padding-left: 1vw;
 }
 #content h3{
     font-size: 1.8vw;
     border-bottom: 1px solid white;
-    margin-bottom: 1.5vh;
+    margin-bottom: 1.7vh;
+    width: fit-content;
 }
 .input input{
     width: 16vw;
@@ -112,24 +112,30 @@ input::placeholder{
     text-align: center;
 }
 .input button{
-    margin-left: .25vw;
-    background-color: white;
-    border-radius: .2vw;
+    margin-left: .5vw;
+    background-color: rgb(0, 12, 118);
+    color: white;
     border: none;
-    padding: .4vh .4vw;
+    border-radius: .5vw;
     font-weight: 600;
+    width: 8vw;
+    height: 3vh;
+    
 }
 .input button:hover{
     background-color: brown;
-    color: white;
     cursor: pointer;
+    transition: background-color .8s;
+}
+.input p{
+    width: 29vw;
 }
 #imagem{
-    margin-left: -2vw;
+    margin-left: -3vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 14vh;
     border-radius: 50%;
     width: 20%;
     background-color: white;
@@ -150,7 +156,7 @@ input::placeholder{
 /*pop-up*/
 .pop-up{
     margin-top: -9vh;
-    width: 100%;
+    min-width: 98vw;
     height: 101vh;
     background-color: rgba(0, 0, 0, 0.591);
     position: fixed;
@@ -296,7 +302,11 @@ footer{
     font-weight: bold;
     padding: 1vh 0;
 }
-
+@media screen and (max-width: 1500px) {
+    #box-newsletter{
+        
+    }
+}
 @media screen and (max-width: 768px) {
     .nav-item{
         display: none;
