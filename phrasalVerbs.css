@@ -160,6 +160,9 @@ footer{
 footer{
     padding: 0.3vh 0;
     }
+    #search input{
+        width: 14.5vw;
+    }
 }
 @media screen and (max-width:768px){
     aside a{

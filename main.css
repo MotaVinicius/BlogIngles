@@ -72,7 +72,7 @@ section{
 }
 #box-newsletter{
     width: 47%;
-    height: 23vh;
+    height: 25vh;
     background-color: #323232f7;
     color: white;
     display: flex;
@@ -86,7 +86,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 1vw;
+    padding: 2vh 1vw;
 }
 #content h3{
     font-size: 1.8vw;
@@ -304,7 +304,10 @@ footer{
 }
 @media screen and (max-width: 1500px) {
     .input button{
-        height: 4.5vh;
+        width: 7vw;
+        height: 4.2vh;
+        font-weight: 400;
+        font-size: 14px;
     }
     footer{
         padding: 0.3vh 0;
