@@ -202,6 +202,11 @@ footer{
     background-color: #313131;
     cursor: pointer;
 }
+@media screen and (max-width:1500px){
+    footer{
+        padding: 0.3vh 0;
+        }
+    }
 @media screen and (max-width: 768px) {
     section{
         flex-direction: column;

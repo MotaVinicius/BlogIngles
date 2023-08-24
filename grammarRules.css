@@ -13,7 +13,7 @@ section{
     display: flex;
 }
 #artigos{
-    min-width: 98vw;
+    min-width: 70vw;
     border-right: 2px solid white;
     margin-top: 8vh;
     width: 70vw;
@@ -109,6 +109,11 @@ footer{
     min-width: 98vw;
     padding: 1vh 0;
 }
+@media screen and (max-width:1500px){
+    footer{
+        padding: 0.3vh 0;
+        }
+    }
 @media screen and (max-width:768px){
     aside a{
         font-size: 2vw;

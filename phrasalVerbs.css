@@ -156,6 +156,11 @@ footer{
     min-width: 98vw;
     padding: 1vh 0;
 }
+@media screen and (max-width:1500px){
+footer{
+    padding: 0.3vh 0;
+    }
+}
 @media screen and (max-width:768px){
     aside a{
         font-size: 2vw;

@@ -303,8 +303,11 @@ footer{
     padding: 1vh 0;
 }
 @media screen and (max-width: 1500px) {
-    #box-newsletter{
-        
+    .input button{
+        height: 4vh;
+    }
+    footer{
+        padding: 0.3vh 0;
     }
 }
 @media screen and (max-width: 768px) {
