@@ -304,7 +304,7 @@ footer{
 }
 @media screen and (max-width: 1500px) {
     .input button{
-        height: 4vh;
+        height: 4.5vh;
     }
     footer{
         padding: 0.3vh 0;
